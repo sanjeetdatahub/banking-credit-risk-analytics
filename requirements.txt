@@ -1,0 +1,10 @@
+# Enterprise Banking Credit Risk Analytics & Basel Engine
+# Core required packages:
+numpy>=1.23.0
+pandas>=1.5.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# Optional extended packages (pipeline runs 100% natively on core stack above)
+scipy>=1.9.0
+scikit-learn>=1.1.0

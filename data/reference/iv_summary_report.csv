@@ -1,0 +1,9 @@
+feature,iv,type,power_classification
+bureau_credit_score,1.34876,Continuous,Suspicious / Potential Leakage (>0.50)
+revolving_utilization_pct,0.56988,Continuous,Suspicious / Potential Leakage (>0.50)
+debt_to_income_ratio,0.47626999999999997,Continuous,Strong Predictor (0.30-0.50) - Prime
+inquiries_last_6m,0.37933,Continuous,Strong Predictor (0.30-0.50) - Prime
+product_type,0.33476,Categorical,Strong Predictor (0.30-0.50) - Prime
+annual_income,0.13291999999999998,Continuous,Medium Predictor (0.10-0.30) - Retain
+employment_years,0.08058,Continuous,Weak Predictor (0.02-0.10)
+home_ownership,0.00262,Categorical,Not Predictive (<0.02) - Exclude

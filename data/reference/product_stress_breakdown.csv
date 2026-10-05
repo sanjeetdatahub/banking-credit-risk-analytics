@@ -1,0 +1,16 @@
+Scenario,product_type,stressed_el_m
+Baseline,AUTO_LOAN,5.45
+Baseline,CREDIT_CARD,9.22
+Baseline,MORTGAGE,28.23
+Baseline,PERSONAL_LOAN,7.56
+Baseline,SME_WORKING_CAP,12.7
+Adverse (Stagflation),AUTO_LOAN,10.01
+Adverse (Stagflation),CREDIT_CARD,16.47
+Adverse (Stagflation),MORTGAGE,50.26
+Adverse (Stagflation),PERSONAL_LOAN,13.68
+Adverse (Stagflation),SME_WORKING_CAP,22.6
+Severely Adverse (Global Recession),AUTO_LOAN,19.62
+Severely Adverse (Global Recession),CREDIT_CARD,28.35
+Severely Adverse (Global Recession),MORTGAGE,95.22
+Severely Adverse (Global Recession),PERSONAL_LOAN,26.39
+Severely Adverse (Global Recession),SME_WORKING_CAP,42.81
