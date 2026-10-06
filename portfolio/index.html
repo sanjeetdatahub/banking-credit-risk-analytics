@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanjeet Kumar | Data Analyst & Business Intelligence Specialist</title>
+  <meta name="description" content="Portfolio of Sanjeet Kumar - Data Analyst specializing in Python, Machine Learning, Banking Credit Risk Analytics, and Adidas Sales Business Intelligence.">
+  <meta name="keywords" content="Data Analyst, Sanjeet Kumar, Business Intelligence, Python, Pandas, Matplotlib, Seaborn, Credit Risk Analytics, Adidas Sales Analysis">
+  <meta name="author" content="Sanjeet Kumar">
+
+  <!-- Open Graph Meta Tags for LinkedIn / Social Sharing -->
+  <meta property="og:title" content="Sanjeet Kumar | Data Analyst Portfolio">
+  <meta property="og:description" content="Explore end-to-end data analytics projects including Banking Credit Risk Modeling and Adidas US Sales Analytics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.linkedin.com/in/sanjeetdatahub/">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       Navigation Bar
+       ====================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <div class="nav-brand-logo">SK</div>
+        <span>Sanjeet<span class="gradient-text">.DataHub</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#simulator" class="nav-link">Live Simulator</a></li>
+          <li><a href="#experience" class="nav-link">Timeline</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- LinkedIn Profile Direct Link -->
+        <a href="https://www.linkedin.com/in/sanjeetdatahub" target="_blank" rel="noopener noreferrer" class="theme-toggle-btn" title="LinkedIn Profile" style="color: #0A66C2;">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <!-- GitHub Profile Direct Link -->
+        <a href="https://github.com/sanjeetdatahub" target="_blank" rel="noopener noreferrer" class="theme-toggle-btn" title="GitHub Profile">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <!-- Dual Theme Switcher (Dark vs Color Mode) -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Theme Mode">
+          <i class="fas fa-sun"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       Hero Section
+       ====================================================================== -->
+  <section class="hero section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-pulse-dot"></span>
+          <span>Available for Data Analyst & BI Roles</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Sanjeet Kumar</span>
+        </h1>
+
+        <p class="hero-description">
+          <strong>Data Analyst & Business Intelligence Specialist</strong> with a passion for transforming massive, messy datasets into executive clarity. Proficient in quantitative risk modeling, commercial profitability analytics, automated Python pipelines (Pandas, NumPy, Seaborn), and high-impact business storytelling.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-chart-pie"></i> Explore Projects
+          </a>
+          <a href="https://www.linkedin.com/in/sanjeetdatahub" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color: #0A66C2; color: #0A66C2;">
+            <i class="fab fa-linkedin"></i> LinkedIn Profile
+          </a>
+          <a href="https://github.com/sanjeetdatahub" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <i class="fab fa-github"></i> GitHub Profile
+          </a>
+          <a href="assets/sanjeet_resume.pdf" download class="btn btn-outline">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3 class="counter-value" data-target="25" data-suffix="M+">25M+</h3>
+            <p>Data Points Analyzed</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="counter-value" data-target="88.4" data-suffix="%">88.4%</h3>
+            <p>Risk Model AUC Score</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="counter-value" data-target="157" data-prefix="$" data-suffix="M+">$157M+</h3>
+            <p>Commercial Revenue Analyzed</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <div class="avatar-glow-ring"></div>
+          <div class="avatar-border-ring"></div>
+          <div class="avatar-image-container">
+            <img src="assets/images/sanjeet-photo.jpg" alt="Sanjeet Kumar - Data Analyst" id="profileImg">
+          </div>
+
+          <!-- Floating Badges matching Sanjeet's cyber aesthetics -->
+          <div class="floating-badge badge-1">
+            <i class="fas fa-shield-alt"></i>
+            <div>
+              <span>Risk Modeling</span>
+              <p style="font-size: 0.7rem; color: var(--text-muted); margin: 0;">PD / LGD / EAD</p>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-2">
+            <i class="fas fa-chart-line"></i>
+            <div>
+              <span>Retail Intelligence</span>
+              <p style="font-size: 0.7rem; color: var(--text-muted); margin: 0;">Adidas Sales EDA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       About Section
+       ====================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Bridging Data Science with <span class="gradient-text">Business Strategy</span></h2>
+        <p class="section-subtitle">
+          I don't just calculate numbers; I extract commercial leverage, mitigate financial risk, and discover untapped margin opportunities.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-content">
+          <p>
+            Welcome! I am an analytical problem solver specializing in end-to-end data analytics, machine learning pipelines, and executive business intelligence. My work focuses on financial credit risk modeling and retail commercial performance.
+          </p>
+          <p>
+            Currently pursuing an <strong>MBA in Business Analytics</strong> (Manipal University Jaipur), I am an intrinsically driven, <strong>self-taught practitioner</strong> who independently mastered <strong>Python (Pandas, NumPy, Scikit-learn), MySQL, and Tableau</strong> through rigorous project building and documentation deep dives.
+          </p>
+          <p>
+            What uniquely distinguishes my profile is my rare dual foundation: I combine <strong>hands-on commercial operations</strong> (high-volume F&B and liquor inventory control, Tally ERP 9, POS revenue reconciliation) with <strong>advanced quantitative data science</strong> and <strong>executive visual design</strong> (Adobe Photoshop, Illustrator, Canva, CorelDRAW). This guarantees that every dashboard, machine learning model, and analytical report I deliver is not only statistically robust, but operationally grounded and visually compelling for boardroom decisions.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon"><i class="fas fa-university"></i></div>
+              <div class="highlight-info">
+                <h4>Banking & Risk</h4>
+                <p>Default Probability, Stress Testing & Expected Loss.</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon"><i class="fas fa-warehouse"></i></div>
+              <div class="highlight-info">
+                <h4>Commercial ERP & Inventory</h4>
+                <p>Tally ERP 9, F&B/Liquor Auditing & POS Reconciliation.</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon"><i class="fab fa-python"></i></div>
+              <div class="highlight-info">
+                <h4>Self-Taught Python & SQL</h4>
+                <p>Independent mastery of MySQL, Pandas & ML Pipelines.</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon"><i class="fas fa-palette"></i></div>
+              <div class="highlight-info">
+                <h4>Executive UI/UX Design</h4>
+                <p>Photoshop, Illustrator, Canva & Tableau C-Suite Decks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats-card" style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 20px; padding: 2.2rem; backdrop-filter: blur(14px);">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.6rem;">
+            <i class="fas fa-bolt" style="color: var(--brand-primary);"></i> Quick Competency Summary
+          </h3>
+          
+          <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem;">
+                <span>Python & Data Wrangling (Pandas/NumPy)</span>
+                <span>95%</span>
+              </div>
+              <div style="height: 8px; background: var(--bg-tertiary); border-radius: 4px; overflow: hidden;">
+                <div style="width: 95%; height: 100%; background: var(--brand-gradient); border-radius: 4px;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem;">
+                <span>SQL Querying & MySQL Database Architecture</span>
+                <span>92%</span>
+              </div>
+              <div style="height: 8px; background: var(--bg-tertiary); border-radius: 4px; overflow: hidden;">
+                <div style="width: 92%; height: 100%; background: var(--brand-gradient); border-radius: 4px;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem;">
+                <span>Data Visualization (Tableau/Matplotlib/Seaborn)</span>
+                <span>94%</span>
+              </div>
+              <div style="height: 8px; background: var(--bg-tertiary); border-radius: 4px; overflow: hidden;">
+                <div style="width: 94%; height: 100%; background: var(--brand-gradient); border-radius: 4px;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem;">
+                <span>Commercial ERP & Inventory Control (Tally/F&B)</span>
+                <span>90%</span>
+              </div>
+              <div style="height: 8px; background: var(--bg-tertiary); border-radius: 4px; overflow: hidden;">
+                <div style="width: 90%; height: 100%; background: var(--brand-gradient); border-radius: 4px;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem;">
+                <span>Executive UI/UX Design & Office Suite (Adobe/Excel)</span>
+                <span>92%</span>
+              </div>
+              <div style="height: 8px; background: var(--bg-tertiary); border-radius: 4px; overflow: hidden;">
+                <div style="width: 92%; height: 100%; background: var(--brand-gradient); border-radius: 4px;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.8rem; padding: 1.1rem; background: var(--bg-tertiary); border-radius: 12px; border-left: 4px solid var(--brand-primary);">
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">
+              <i class="fas fa-quote-left" style="color: var(--brand-primary); margin-right: 0.4rem;"></i>
+              "A self-taught mindset powered by rigorous MBA business acumen: bridging real-world ERP operations with advanced quantitative data science."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Skills Section
+       ====================================================================== -->
+  <section class="section" id="skills" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical & Operational Competencies</span>
+        <h2 class="section-title">The Comprehensive <span class="gradient-text">Analytical Toolkit</span></h2>
+        <p class="section-subtitle">A balanced multi-disciplinary stack spanning quantitative data science, commercial ERP operations, and executive visual design.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Category 1: Core Programming & Relational Databases -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon"><i class="fab fa-python"></i></div>
+            <h3>Core Data Science & SQL</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill"><i class="fab fa-python"></i> Python (Pandas / NumPy)</span>
+            <span class="skill-pill"><i class="fas fa-database"></i> MySQL Relational DB</span>
+            <span class="skill-pill"><i class="fas fa-filter"></i> Data Cleaning & Wrangling</span>
+            <span class="skill-pill"><i class="fas fa-layer-group"></i> Feature Engineering</span>
+            <span class="skill-pill"><i class="fas fa-cogs"></i> Automated ETL Pipelines</span>
+            <span class="skill-pill"><i class="fas fa-graduation-cap"></i> Self-Taught Practitioner</span>
+          </div>
+        </div>
+
+        <!-- Category 2: Business Intelligence & Cockpits -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon"><i class="fas fa-chart-pie"></i></div>
+            <h3>BI & Statistical Visualization</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill"><i class="fas fa-desktop"></i> Tableau Public & Desktop</span>
+            <span class="skill-pill"><i class="fas fa-chart-bar"></i> Power BI Dashboards</span>
+            <span class="skill-pill"><i class="fas fa-chart-line"></i> Matplotlib & Seaborn</span>
+            <span class="skill-pill"><i class="fas fa-tachometer-alt"></i> Executive KPI Cockpits</span>
+            <span class="skill-pill"><i class="fas fa-th"></i> Heatmaps & Cohort Matrices</span>
+            <span class="skill-pill"><i class="fas fa-project-diagram"></i> Interactive Drilldowns</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Commercial ERP & Inventory Operations -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon"><i class="fas fa-boxes"></i></div>
+            <h3>Commercial ERP & Inventory</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill"><i class="fas fa-file-invoice-dollar"></i> Tally ERP 9</span>
+            <span class="skill-pill"><i class="fas fa-wine-bottle"></i> Hotel F&B & Liquor Inventory</span>
+            <span class="skill-pill"><i class="fas fa-cash-register"></i> ShawMan POS Reconciliation</span>
+            <span class="skill-pill"><i class="fas fa-balance-scale"></i> Stock Variance & Shrinkage</span>
+            <span class="skill-pill"><i class="fas fa-receipt"></i> COGS & Margin Auditing</span>
+            <span class="skill-pill"><i class="fas fa-university"></i> Bank Account Reconciliation</span>
+          </div>
+        </div>
+
+        <!-- Category 4: Financial Modeling & Risk Analytics -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Financial Risk Modeling & ML</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill"><i class="fas fa-robot"></i> Scikit-Learn Machine Learning</span>
+            <span class="skill-pill"><i class="fas fa-percentage"></i> Probability of Default (PD)</span>
+            <span class="skill-pill"><i class="fas fa-balance-scale-right"></i> Loss Given Default (LGD)</span>
+            <span class="skill-pill"><i class="fas fa-coins"></i> Expected Loss (EL) Calculation</span>
+            <span class="skill-pill"><i class="fas fa-brain"></i> Logistic Regression & XGBoost</span>
+            <span class="skill-pill"><i class="fas fa-vial"></i> Basel III & Stress Testing</span>
+          </div>
+        </div>
+
+        <!-- Category 5: Visual Storytelling & UI/UX Design -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon"><i class="fas fa-palette"></i></div>
+            <h3>Visual Storytelling & UI/UX</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill"><i class="fas fa-image"></i> Adobe Photoshop</span>
+            <span class="skill-pill"><i class="fas fa-vector-square"></i> Adobe Illustrator</span>
+            <span class="skill-pill"><i class="fas fa-magic"></i> Canva Pro</span>
+            <span class="skill-pill"><i class="fas fa-pen-nib"></i> CorelDRAW</span>
+            <span class="skill-pill"><i class="fas fa-newspaper"></i> Adobe PageMaker</span>
+            <span class="skill-pill"><i class="fas fa-presentation-screen"></i> C-Suite Deck & Infographic Design</span>
+          </div>
+        </div>
+
+        <!-- Category 6: Enterprise Productivity & Multimedia -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Enterprise Suite & Multimedia</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill"><i class="fas fa-file-excel"></i> Advanced MS Excel (XLOOKUP/Pivot)</span>
+            <span class="skill-pill"><i class="fas fa-database"></i> Microsoft Access (Relational DB)</span>
+            <span class="skill-pill"><i class="fas fa-file-powerpoint"></i> Microsoft PowerPoint</span>
+            <span class="skill-pill"><i class="fas fa-file-word"></i> MS Word & MS Publisher</span>
+            <span class="skill-pill"><i class="fas fa-video"></i> Video Editing (EDIUS Pro & Filmora)</span>
+            <span class="skill-pill"><i class="fas fa-film"></i> KineMaster Video Mixing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Featured Projects Section
+       ====================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio Highlights</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Analytics Projects</span></h2>
+        <p class="section-subtitle">Real-world end-to-end case studies covering financial risk modeling and retail profitability.</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="banking">Banking & Risk Analytics</button>
+        <button class="filter-btn" data-filter="retail">Retail & Sales Intelligence</button>
+        <button class="filter-btn" data-filter="bi">BI & Dashboards</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- PROJECT 1: BANKING CREDIT RISK (FLAGSHIP) -->
+        <div class="project-card" data-category="banking ml">
+          <div class="project-badge-top">Flagship Risk Project</div>
+          <div class="project-thumbnail">
+            <img src="assets/images/banking/03_roc_auc_curve.png" alt="Banking Credit Risk Analytics">
+            <div class="project-thumbnail-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-category"><i class="fas fa-university"></i> Banking & Credit Risk</span>
+            </div>
+            <h3 class="project-title">Banking Credit Risk & Loan Portfolio Analytics</h3>
+            <p class="project-description">
+              Quantitative risk management engine built for commercial lending. Evaluates Probability of Default (PD), Loss Given Default (LGD), Expected Loss (EL), and IFRS 9 multi-stage impairment across 10,000+ credit facilities.
+            </p>
+
+            <div class="project-metrics-grid">
+              <div class="metric-box">
+                <span>Model Power</span>
+                <strong>88.4% ROC-AUC</strong>
+              </div>
+              <div class="metric-box">
+                <span>Capital Protected</span>
+                <strong>$14.2M Mitigated</strong>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-Learn</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Seaborn</span>
+              <span class="tech-tag">Basel III</span>
+              <span class="tech-tag">Stress Testing</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="#" class="btn btn-primary btn-sm" data-open-case="banking">
+                <i class="fas fa-eye"></i> View Case Study
+              </a>
+              <a href="https://github.com/sanjeetdatahub/banking-credit-risk-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fab fa-github"></i> GitHub Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: ADIDAS SALES ANALYSIS (FLAGSHIP) -->
+        <div class="project-card" data-category="retail analytics">
+          <div class="project-badge-top">Commercial Retail Project</div>
+          <div class="project-thumbnail">
+            <img src="assets/images/adidas/01_total_sales_and_profit_by_product.png" alt="Adidas US Sales Analysis">
+            <div class="project-thumbnail-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-category"><i class="fas fa-store"></i> Retail & Profitability EDA</span>
+            </div>
+            <h3 class="project-title">Adidas US Sales Performance & Margin Analytics</h3>
+            <p class="project-description">
+              Comprehensive business intelligence analysis across 9,648 retail transactions. Discovered product mix margin dynamics (Apparel 42% vs Footwear 36%), channel efficiencies (In-Store, Outlet, Online), and partner concentration.
+            </p>
+
+            <div class="project-metrics-grid">
+              <div class="metric-box">
+                <span>Total Revenue</span>
+                <strong>$157.4M Gross</strong>
+              </div>
+              <div class="metric-box">
+                <span>Operating Margin</span>
+                <strong>38.2% Average</strong>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">Matplotlib</span>
+              <span class="tech-tag">Seaborn</span>
+              <span class="tech-tag">Jupyter</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="#" class="btn btn-primary btn-sm" data-open-case="adidas">
+                <i class="fas fa-eye"></i> View Case Study
+              </a>
+              <a href="https://github.com/sanjeetdatahub/adidas-sales-analysis" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fab fa-github"></i> GitHub Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: EXECUTIVE BI DASHBOARD -->
+        <div class="project-card" data-category="retail bi">
+          <div class="project-thumbnail">
+            <img src="assets/images/adidas/03_sales_by_region_and_retailer.png" alt="Retail Omnichannel BI Cockpit">
+            <div class="project-thumbnail-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-category"><i class="fas fa-tachometer-alt"></i> Executive BI Dashboard</span>
+            </div>
+            <h3 class="project-title">Omnichannel Retail BI Cockpit & Store Analytics</h3>
+            <p class="project-description">
+              Multi-dimensional commercial reporting dashboard tracking partner revenue share (Foot Locker, West Gear, Walmart), regional transaction velocity across 50 US states, and seasonal inventory demand swings.
+            </p>
+
+            <div class="project-metrics-grid">
+              <div class="metric-box">
+                <span>US Coverage</span>
+                <strong>50 States</strong>
+              </div>
+              <div class="metric-box">
+                <span>Key Partners</span>
+                <strong>6 Retail Chains</strong>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Tableau</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">KPI Modeling</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="#" class="btn btn-primary btn-sm" data-open-case="adidas">
+                <i class="fas fa-chart-bar"></i> View Case Study
+              </a>
+              <a href="https://github.com/sanjeetdatahub/adidas-sales-analysis" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fab fa-github"></i> GitHub Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: DELINQUENCY TRANSITION & MIGRATION MODEL -->
+        <div class="project-card" data-category="banking ml">
+          <div class="project-thumbnail">
+            <img src="assets/images/banking/05_delinquency_transition_heatmap.png" alt="Delinquency Migration Modeling">
+            <div class="project-thumbnail-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-category"><i class="fas fa-history"></i> Credit Portfolio Risk</span>
+            </div>
+            <h3 class="project-title">Loan Delinquency Roll-Rate & Migration Matrix</h3>
+            <p class="project-description">
+              Markov-chain transition matrix framework tracking loan delinquency migrations between buckets (Current -> 30 DPD -> 60 DPD -> 90+ Default) with macroeconomic scenario stress sensitivity.
+            </p>
+
+            <div class="project-metrics-grid">
+              <div class="metric-box">
+                <span>Separation Power</span>
+                <strong>61.2% KS Stat</strong>
+              </div>
+              <div class="metric-box">
+                <span>Risk Tiers</span>
+                <strong>5 Calibrated</strong>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Markov Chains</span>
+              <span class="tech-tag">Seaborn</span>
+              <span class="tech-tag">Credit Bureau</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="#" class="btn btn-primary btn-sm" data-open-case="banking">
+                <i class="fas fa-eye"></i> View Case Study
+              </a>
+              <a href="https://github.com/sanjeetdatahub/banking-credit-risk-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fab fa-github"></i> GitHub Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Interactive Live Analytics Playground / Simulator Section
+       ====================================================================== -->
+  <section class="section" id="simulator" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Simulation</span>
+        <h2 class="section-title">Live Data <span class="gradient-text">Playground</span></h2>
+        <p class="section-subtitle">
+          Test drive my analytical models in real time! Adjust the sliders and parameters below to witness instant quantitative recalculations.
+        </p>
+      </div>
+
+      <div class="playground-wrapper">
+        <div class="playground-nav">
+          <button class="playground-tab active" data-target="bankingSimulatorTab">
+            <i class="fas fa-university"></i> Banking Risk Score Simulator
+          </button>
+          <button class="playground-tab" data-target="adidasSimulatorTab">
+            <i class="fas fa-store"></i> Adidas Profitability Engine
+          </button>
+        </div>
+
+        <!-- Simulator Pane 1: Banking Risk Simulator -->
+        <div class="tab-pane active" id="bankingSimulatorTab">
+          <div class="simulator-grid">
+            <div class="simulator-controls">
+              <h4 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 0.5rem;">
+                <i class="fas fa-sliders-h" style="color: var(--brand-primary);"></i> Adjust Borrower Attributes:
+              </h4>
+
+              <div class="control-group">
+                <label>
+                  <span>Borrower FICO / Credit Score:</span>
+                  <span id="simCreditScoreVal">710</span>
+                </label>
+                <input type="range" class="slider-input" id="simCreditScore" min="500" max="850" value="710">
+              </div>
+
+              <div class="control-group">
+                <label>
+                  <span>Debt-to-Income (DTI Ratio %):</span>
+                  <span id="simDTIVal">32%</span>
+                </label>
+                <input type="range" class="slider-input" id="simDTI" min="5" max="65" value="32">
+              </div>
+
+              <div class="control-group">
+                <label>
+                  <span>Requested Loan Exposure ($):</span>
+                  <span id="simLoanAmountVal">$25,000</span>
+                </label>
+                <input type="range" class="slider-input" id="simLoanAmount" min="2000" max="100000" step="1000" value="25000">
+              </div>
+            </div>
+
+            <div class="simulator-result-box">
+              <h4 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 0.5rem;">
+                <i class="fas fa-chart-line" style="color: var(--brand-primary);"></i> Real-Time Risk Calculations:
+              </h4>
+
+              <div class="result-kpi-row">
+                <div class="result-kpi-card">
+                  <span>Probability of Default (PD)</span>
+                  <strong id="simPDResult">3.42%</strong>
+                </div>
+                <div class="result-kpi-card">
+                  <span>Expected Loss (EL = PD * LGD)</span>
+                  <strong id="simELResult">$385</strong>
+                </div>
+              </div>
+
+              <div class="result-kpi-card" style="margin-top: -0.5rem;">
+                <span>Credit Quality Rating Tier</span>
+                <strong id="simTierResult" style="color: #10B981;">AA (Prime Segment)</strong>
+                <p id="simStatusResult" style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.3rem;">✅ Approved with Standard Rate</p>
+                <div class="risk-meter-bar">
+                  <div class="risk-meter-fill" id="simRiskMeterFill"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simulator Pane 2: Adidas Profitability Explorer -->
+        <div class="tab-pane" id="adidasSimulatorTab">
+          <div class="simulator-grid">
+            <div class="simulator-controls">
+              <h4 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 0.5rem;">
+                <i class="fas fa-shopping-bag" style="color: var(--brand-primary);"></i> Configure Retail Scenario:
+              </h4>
+
+              <div class="control-group">
+                <label>Product Line Segment:</label>
+                <select class="select-input" id="adCategory">
+                  <option value="apparel">Apparel (Women's & Men's High-Margin Lines)</option>
+                  <option value="footwear">Footwear (Street & Athletic Shoes)</option>
+                </select>
+              </div>
+
+              <div class="control-group">
+                <label>Sales Method / Channel:</label>
+                <select class="select-input" id="adChannel">
+                  <option value="instore">In-Store Retail Flagship</option>
+                  <option value="online">Online Direct-to-Consumer (DTC)</option>
+                  <option value="outlet">Outlet Centers (Discount/Volume)</option>
+                </select>
+              </div>
+
+              <div class="control-group">
+                <label>
+                  <span>Projected Units Sold:</span>
+                  <span id="adUnitsVal">5,000</span>
+                </label>
+                <input type="range" class="slider-input" id="adUnits" min="500" max="50000" step="500" value="5000">
+              </div>
+            </div>
+
+            <div class="simulator-result-box">
+              <h4 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 0.5rem;">
+                <i class="fas fa-coins" style="color: var(--brand-primary);"></i> Financial Projections:
+              </h4>
+
+              <div class="result-kpi-row">
+                <div class="result-kpi-card">
+                  <span>Gross Sales Revenue</span>
+                  <strong id="adRevenueResult">$325,000</strong>
+                </div>
+                <div class="result-kpi-card">
+                  <span>Net Operating Profit</span>
+                  <strong id="adProfitResult">$137,150</strong>
+                </div>
+              </div>
+
+              <div class="result-kpi-card" style="margin-top: -0.5rem;">
+                <span>Operating Margin %</span>
+                <strong id="adMarginResult" style="color: #2DD4BF;">42.2%</strong>
+                <p id="adChannelShare" style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.3rem;">In-Store Retail (Flagship & Partner Malls)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Experience & Education Timeline Section
+       ====================================================================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic & Professional Journey</span>
+        <h2 class="section-title">Education & <span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle">A balanced fusion of Business Analytics education, quantitative risk modeling, and hands-on commercial experience.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; max-width: 1100px; margin: 0 auto;">
+        
+        <!-- EDUCATION COLUMN -->
+        <div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; margin-bottom: 1.8rem; display: flex; align-items: center; gap: 0.7rem; color: var(--brand-primary);">
+            <i class="fas fa-graduation-cap"></i> Academic Background
+          </h3>
+          
+          <div class="timeline" style="margin: 0; max-width: 100%;">
+            <!-- MBA Manipal -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-date">2026 — 2028 (Pursuing)</span>
+                <h3 class="timeline-title">Master of Business Administration (MBA)</h3>
+                <h4 class="timeline-company">Manipal University Jaipur (Online Manipal)</h4>
+                <p class="timeline-description">
+                  Specialization in <strong>Business Analytics</strong> & Data-Driven Decision Making. Developing advanced competencies in business strategy, financial modeling, KPI performance measurement, managerial statistics, and organizational leadership.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem;">
+                  <span class="tech-tag" style="background: var(--badge-bg); color: var(--badge-text);">Business Analytics</span>
+                  <span class="tech-tag">Data-Driven Strategy</span>
+                  <span class="tech-tag">KPI Management</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- B.A. Political Science LNMU -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-date">2017 — 2020</span>
+                <h3 class="timeline-title">Bachelor of Arts (B.A. Hons) — Political Science</h3>
+                <h4 class="timeline-company">Lalit Narayan Mithila University (LNMU), Darbhanga (Bihar)</h4>
+                <p class="timeline-description">
+                  Developed strong critical thinking, qualitative & quantitative analytical reasoning, institutional governance, public policy analysis, and structured research methodologies.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem;">
+                  <span class="tech-tag">Research & Analysis</span>
+                  <span class="tech-tag">Critical Reasoning</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 12th Science BSEB -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-date">2015 — 2017</span>
+                <h3 class="timeline-title">Intermediate (12th) — Science (Mathematics)</h3>
+                <h4 class="timeline-company">Bihar School Examination Board (BSEB), Patna</h4>
+                <p class="timeline-description">
+                  Rigorous foundational education in Mathematics, Physics, Chemistry, and numerical problem solving.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXPERIENCE COLUMN -->
+        <div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; margin-bottom: 1.8rem; display: flex; align-items: center; gap: 0.7rem; color: var(--brand-secondary);">
+            <i class="fas fa-briefcase"></i> Work Experience & Projects
+          </h3>
+          
+          <div class="timeline" style="margin: 0; max-width: 100%;">
+            <!-- Experience 1: Analytics -->
+            <div class="timeline-item">
+              <div class="timeline-dot" style="border-color: var(--brand-secondary); box-shadow: 0 0 10px var(--brand-secondary);"></div>
+              <div class="timeline-card">
+                <span class="timeline-date" style="color: var(--brand-secondary);">2024 — Present</span>
+                <h3 class="timeline-title">Data Analyst & Analytics Researcher</h3>
+                <h4 class="timeline-company">DataHub Analytics Showcase</h4>
+                <p class="timeline-description">
+                  Spearheading end-to-end data analytics pipelines in Python (Pandas, NumPy, Seaborn) and SQL. Engineered Banking Credit Risk default models (88.4% ROC-AUC) and commercial retail profitability engines across $157M+ transaction benchmarks.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem;">
+                  <span class="tech-tag" style="background: rgba(45, 212, 191, 0.1); color: var(--brand-secondary);">Python</span>
+                  <span class="tech-tag">Credit Risk</span>
+                  <span class="tech-tag">Tableau</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience 2: Savaa Ser -->
+            <div class="timeline-item">
+              <div class="timeline-dot" style="border-color: var(--brand-secondary); box-shadow: 0 0 10px var(--brand-secondary);"></div>
+              <div class="timeline-card">
+                <span class="timeline-date" style="color: var(--brand-secondary);">Oct 2021 — Dec 2023</span>
+                <h3 class="timeline-title">Cashier & Commercial Inventory Specialist</h3>
+                <h4 class="timeline-company">Savaa Ser Pvt. Ltd. (LUPA Bengaluru)</h4>
+                <p class="timeline-description">
+                  Directed daily high-volume digital & POS settlements, ShawMan software data reconciliation, and comprehensive Food & Beverage (F&B) and liquor inventory auditing. Resolved daily physical stock variances, tracked shrinkage & wastage metrics, and generated executive Excel revenue reconciliation reports.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem;">
+                  <span class="tech-tag" style="background: rgba(45, 212, 191, 0.1); color: var(--brand-secondary);">F&B & Liquor Inventory</span>
+                  <span class="tech-tag">ShawMan POS</span>
+                  <span class="tech-tag">Advanced Excel</span>
+                  <span class="tech-tag">Stock Variance</span>
+                  <span class="tech-tag">Financial Reconciliation</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience 3: Subha Lakshmi -->
+            <div class="timeline-item">
+              <div class="timeline-dot" style="border-color: var(--brand-secondary); box-shadow: 0 0 10px var(--brand-secondary);"></div>
+              <div class="timeline-card">
+                <span class="timeline-date" style="color: var(--brand-secondary);">2017 — 2018</span>
+                <h3 class="timeline-title">Assistant Accountant & ERP Operator</h3>
+                <h4 class="timeline-company">Subha Lakshmi Pvt. Ltd., Madhwapur (Bihar)</h4>
+                <p class="timeline-description">
+                  Managed Tally ERP 9 accounting ledgers (Sales, Purchases, Cash/Bank Vouchers, Invoices), prepared monthly balance sheet schedules, reconciled commercial bank statements, and maintained physical goods inventory registers.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem;">
+                  <span class="tech-tag">Tally ERP 9</span>
+                  <span class="tech-tag">Bank Reconciliation</span>
+                  <span class="tech-tag">Stock Ledger</span>
+                  <span class="tech-tag">Financial Reporting</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Contact Section
+       ====================================================================== -->
+  <section class="section" id="contact" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Let's Discuss <span class="gradient-text">Your Data Goals</span></h2>
+        <p class="section-subtitle">Have an opening, a consulting project, or just want to connect over analytics? Reach out anytime!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem;">Direct Channels</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 2rem;">
+            I am actively open to full-time Data Analyst, BI Analyst, and Risk Analytics roles, as well as freelance data science engagements.
+          </p>
+
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-icon-box"><i class="fab fa-linkedin-in"></i></div>
+              <div class="contact-info-details">
+                <span>LinkedIn Profile</span>
+                <a href="https://www.linkedin.com/in/sanjeetdatahub" target="_blank" rel="noopener noreferrer">linkedin.com/in/sanjeetdatahub</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon-box"><i class="fab fa-github"></i></div>
+              <div class="contact-info-details">
+                <span>GitHub Repositories</span>
+                <a href="https://github.com/sanjeetdatahub" target="_blank" rel="noopener noreferrer">github.com/sanjeetdatahub</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+              <div class="contact-info-details">
+                <span>Email Address</span>
+                <a href="mailto:sanjeetdatahub@gmail.com">sanjeetdatahub@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-info-details">
+                <span>Location</span>
+                <strong>India (Open to Remote & Global Relocation)</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="contactName">Your Full Name</label>
+              <input type="text" id="contactName" class="form-control" placeholder="e.g. Rahul Sharma" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="name@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject">Subject / Opportunity</label>
+              <input type="text" id="contactSubject" class="form-control" placeholder="e.g. Data Analyst Role Inquiry">
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Message / Project Details</label>
+              <textarea id="contactMessage" class="form-control" placeholder="Tell me about your requirements, data stack, or timeline..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Case Study Modal Window
+       ====================================================================== -->
+  <div class="modal-overlay" id="caseStudyModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modalTitle">Project Deep Dive</h3>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal Window">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="modalDynamicContent">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       Footer
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/sanjeetdatahub" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/sanjeetdatahub" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:sanjeetdatahub@gmail.com" class="footer-social-btn" title="Email Sanjeet">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="#hero" class="footer-social-btn" title="Back to Top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+      <p class="footer-copy">
+        &copy; 2026 <strong>Sanjeet Kumar</strong> | Built with Precision, Python & Modern Web Standards.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="assets/script.js"></script>
+</body>
+</html>
