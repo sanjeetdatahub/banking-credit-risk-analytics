@@ -1,0 +1,107 @@
+.timelineColumns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.columnHeader {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.timeline {
+  position: relative;
+  border-left: 2px solid var(--border-light);
+  padding-left: 1.8rem;
+  margin-left: 0.6rem;
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 2.2rem;
+}
+
+.timelineItem:last-child {
+  margin-bottom: 0;
+}
+
+.timelineDot {
+  position: absolute;
+  left: -2.35rem;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 3px solid var(--brand-primary);
+  box-shadow: 0 0 10px var(--brand-primary);
+}
+
+.dotSecondary {
+  border-color: var(--brand-secondary);
+  box-shadow: 0 0 10px var(--brand-secondary);
+}
+
+.timelineCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 1.6rem;
+  transition: all var(--transition-fast);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.timelineCard:hover {
+  transform: translateX(4px);
+  border-color: var(--brand-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.timelineDate {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.timelineTitle {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.timelineCompany {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.timelineDescription {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.timelineDescription strong {
+  color: var(--text-primary);
+}
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}

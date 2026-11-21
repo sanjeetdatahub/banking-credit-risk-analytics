@@ -1,0 +1,283 @@
+/* ==========================================================================
+   SANJEET KUMAR - NEXT.JS PORTFOLIO GLOBAL DESIGN SYSTEM
+   Supports Dual Theme: Full Dark Mode & Modern Vibrant Color/Light Mode
+   ========================================================================== */
+
+:root {
+  /* Vibrant Light / Color Theme Palette */
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #EDF2F7;
+  --bg-card: rgba(255, 255, 255, 0.88);
+  --bg-card-hover: rgba(255, 255, 255, 0.98);
+  --bg-glass: rgba(255, 255, 255, 0.75);
+  
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --text-inverse: #FFFFFF;
+  
+  --brand-primary: #2563EB;        /* Royal Blue */
+  --brand-secondary: #0D9488;      /* Teal */
+  --brand-accent: #7C3AED;         /* Electric Violet */
+  --brand-cyan: #0284C7;           /* Sky Blue */
+  --brand-gradient: linear-gradient(135deg, #2563EB 0%, #7C3AED 50%, #0D9488 100%);
+  --brand-gradient-glow: linear-gradient(135deg, rgba(37,99,235,0.15), rgba(124,58,237,0.15));
+  
+  --border-light: rgba(148, 163, 184, 0.25);
+  --border-focus: #2563EB;
+  --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 6px 18px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 16px 36px rgba(15, 23, 42, 0.12);
+  --shadow-glow: 0 0 25px rgba(37, 99, 235, 0.2);
+
+  --badge-bg: rgba(37, 99, 235, 0.1);
+  --badge-text: #1D4ED8;
+  --badge-border: rgba(37, 99, 235, 0.25);
+
+  --font-main: var(--font-jakarta), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: var(--font-outfit), sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
+
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Full Cyber Dark Mode Palette (Default) */
+[data-theme="dark"] {
+  --bg-primary: #0A0F1D;
+  --bg-secondary: #0F172A;
+  --bg-tertiary: #1E293B;
+  --bg-card: rgba(15, 23, 42, 0.82);
+  --bg-card-hover: rgba(30, 41, 59, 0.9);
+  --bg-glass: rgba(15, 23, 42, 0.7);
+  
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --text-inverse: #0F172A;
+  
+  --brand-primary: #38BDF8;        /* Electric Cyan */
+  --brand-secondary: #2DD4BF;      /* Bright Teal */
+  --brand-accent: #A855F7;         /* Vivid Purple */
+  --brand-cyan: #00F0FF;           /* Neon Cyan */
+  --brand-gradient: linear-gradient(135deg, #00F0FF 0%, #38BDF8 40%, #A855F7 100%);
+  --brand-gradient-glow: linear-gradient(135deg, rgba(0,240,255,0.12), rgba(168,85,247,0.12));
+  
+  --border-light: rgba(255, 255, 255, 0.08);
+  --border-focus: #00F0FF;
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.65);
+  --shadow-glow: 0 0 30px rgba(0, 240, 255, 0.25);
+
+  --badge-bg: rgba(0, 240, 255, 0.1);
+  --badge-text: #38BDF8;
+  --badge-border: rgba(0, 240, 255, 0.25);
+}
+
+/* --------------------------------------------------------------------------
+   Reset & Base Styles
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+  background-image: 
+    radial-gradient(at 15% 15%, rgba(0, 240, 255, 0.05) 0px, transparent 50%),
+    radial-gradient(at 85% 25%, rgba(168, 85, 247, 0.05) 0px, transparent 50%),
+    radial-gradient(at 50% 80%, rgba(37, 99, 235, 0.04) 0px, transparent 50%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+}
+
+/* --------------------------------------------------------------------------
+   Container & Layout Utilities
+   -------------------------------------------------------------------------- */
+.container {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 3.5rem;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 1rem;
+  border-radius: 9999px;
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  border: 1px solid var(--badge-border);
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.gradient-text {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* --------------------------------------------------------------------------
+   Buttons & UI Elements
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.8rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+.btn-sm {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.85rem;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background: var(--brand-gradient);
+  color: #0A0F1D;
+  box-shadow: 0 4px 15px rgba(0, 240, 255, 0.25);
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 240, 255, 0.4);
+}
+
+.btn-outline {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border-color: var(--border-light);
+}
+
+.btn-outline:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--brand-primary);
+  transform: translateY(-2px);
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  background: var(--bg-tertiary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-light);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Media Breakpoints
+   -------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  .section {
+    padding: 4.5rem 0;
+  }
+  .section-title {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 92%;
+    padding: 0 0.5rem;
+  }
+  .section {
+    padding: 3.5rem 0;
+  }
+  .section-title {
+    font-size: 1.85rem;
+  }
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .btn {
+    width: 100%;
+  }
+}

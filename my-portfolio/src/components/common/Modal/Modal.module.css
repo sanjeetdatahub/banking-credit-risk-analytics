@@ -1,0 +1,177 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 15, 29, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-normal);
+}
+
+.modalOverlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modalDialog {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  transform: scale(0.95);
+  transition: transform var(--transition-normal);
+  padding: 2.2rem;
+  position: relative;
+}
+
+.modalOverlay.active .modalDialog {
+  transform: scale(1);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.modalHeader h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.modalCloseBtn {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-light);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.modalCloseBtn:hover {
+  background: var(--brand-primary);
+  color: #0A0F1D;
+  transform: rotate(90deg);
+}
+
+.modalImageBanner {
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-light);
+  max-height: 380px;
+}
+
+.modalImageBanner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modalSectionTitle {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 1.8rem 0 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--brand-primary);
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1.8rem 0;
+}
+
+.metricCard {
+  background: var(--bg-tertiary);
+  padding: 1.1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+}
+
+.metricLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: block;
+}
+
+.metricVal {
+  font-family: var(--font-mono);
+  font-size: 1.3rem;
+  color: var(--brand-primary);
+  font-weight: 700;
+  margin-top: 0.2rem;
+  display: block;
+}
+
+.methodologyList {
+  list-style: disc;
+  margin-left: 1.5rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.impactBox {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  background: var(--bg-tertiary);
+  padding: 1.2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--brand-primary);
+  margin-top: 0.5rem;
+}
+
+.chartContainer {
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 1rem 0;
+  border: 1px solid var(--border-light);
+}
+
+.chartContainer img {
+  width: 100%;
+  display: block;
+}
+
+.modalFooterActions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .modalDialog {
+    padding: 1.4rem;
+  }
+  .modalHeader h3 {
+    font-size: 1.2rem;
+  }
+}
